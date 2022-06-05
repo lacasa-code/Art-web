@@ -163,16 +163,17 @@
     </section>
     @endif
 
+    {{-- Best Selling  --}}
+    <div id="section_best_selling">
+
+    </div>
 
     {{-- Featured Section --}}
     <div id="section_featured">
 
     </div>
 
-    {{-- Best Selling  --}}
-    <div id="section_best_selling">
 
-    </div>
 
     <!-- Auction Product -->
     @if(addon_is_activated('auction'))
