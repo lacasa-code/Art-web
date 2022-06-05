@@ -138,6 +138,12 @@
                             <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
                                 <a href="{{ route('dashboard') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('My Panel')}}</a>
                             </li>
+                            <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
+                                <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md">
+                                    {{ translate('Be a Seller') }}
+                                </a>
+                            </li>
+
                         @endif
                         <li class="list-inline-item">
                             <a href="{{ route('logout') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('Logout')}}</a>
@@ -148,6 +154,11 @@
                         </li>
                         <li class="list-inline-item">
                             <a href="{{ route('user.registration') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('Registration')}}</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md">
+                               {{ translate('Be a Seller') }}
+                            </a>
                         </li>
                     @endauth
                 </ul>
