@@ -120,6 +120,13 @@
                         </a>
                     </li>
 
+                    <li class="aiz-side-nav-item">
+                        <i class="las la-atom aiz-side-nav-icon"></i>
+                        <a class="opacity-50 hov-opacity-100 text-reset" href="{{ route('orders.track') }}">
+                                {{ translate('Track Order') }}
+                        </a>
+                    </li>
+
                     @if (addon_is_activated('refund_request'))
                         <li class="aiz-side-nav-item">
                             <a href="{{ route('customer_refund_request') }}" class="aiz-side-nav-link {{ areActiveRoutes(['customer_refund_request'])}}">

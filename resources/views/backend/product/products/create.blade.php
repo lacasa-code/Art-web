@@ -43,7 +43,7 @@
                                     <option value="{{ $brand->id }}">{{ $brand->getTranslation('name') }}</option>
                                     @endforeach
                                 </select>-->
-                                <input type="text" class="form-control" name="brand_id" id="brand_id" placeholder="{{ Auth::user()->name }}"  required>
+                                <input type="text" class="form-control" name="brand_id" id="brand_id" value="{{ Auth::user()->name }}"  required>
                             
                             </div>
                         </div>
