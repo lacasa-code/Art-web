@@ -13,6 +13,7 @@
                     $num_todays_deal = count($todays_deal_products);
                 @endphp
 
+                <!-- slide banner  -->
                 <div class="@if($num_todays_deal > 0) col-lg-7 @else col-lg-9 @endif">
                     @if (get_setting('home_slider_images') != null)
                         <div class="aiz-carousel dots-inside-bottom mobile-img-auto-height" data-arrows="true" data-dots="true" data-autoplay="true">
@@ -36,7 +37,7 @@
                             @endforeach
                         </div>
                     @endif
-                    @if (count($featured_categories) > 0)
+                    <!--@if (count($featured_categories) > 0)
                         <ul class="list-unstyled mb-0 row gutters-5">
                             @foreach ($featured_categories as $key => $category)
                                 <li class="minw-0 col-4 col-md mt-3">
@@ -54,7 +55,7 @@
                                 </li>
                             @endforeach
                         </ul>
-                    @endif
+                    @endif -->
                 </div>
 
                 @if($num_todays_deal > 0)
@@ -162,6 +163,11 @@
         </div>
     </section>
     @endif
+
+    {{-- Best Seller --}}
+    <div id="section_best_sellers">
+
+    </div>
 
     {{-- Best Selling  --}}
     <div id="section_best_selling">
@@ -284,10 +290,7 @@
     </div>
     @endif
 
-    {{-- Best Seller --}}
-    <div id="section_best_sellers">
 
-    </div>
 
     {{-- Top 10 categories and Brands --}}
     @if (get_setting('top10_categories') != null && get_setting('top10_brands') != null)

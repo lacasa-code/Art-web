@@ -121,9 +121,9 @@
                     </li>
 
                     <li class="aiz-side-nav-item">
-                        <i class="las la-atom aiz-side-nav-icon"></i>
-                        <a class="opacity-50 hov-opacity-100 text-reset" href="{{ route('orders.track') }}">
-                                {{ translate('Track Order') }}
+                        <a class="aiz-side-nav-link {{ areActiveRoutes(['orders.track'])}}" href="{{ route('orders.track') }}">
+                           <i class="las la-atom aiz-side-nav-icon"></i>    
+                           {{ translate('Track Order') }}
                         </a>
                     </li>
 
