@@ -188,12 +188,7 @@ class SearchController extends Controller
         return '0';
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         $search = Search::where('query', $request->keyword)->first();
