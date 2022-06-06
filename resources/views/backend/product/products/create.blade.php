@@ -35,14 +35,16 @@
                             </div>
                         </div>
                         <div class="form-group row" id="brand">
-                            <label class="col-md-3 col-from-label">{{translate('Brand')}}</label>
+                            <label class="col-md-3 col-from-label">{{translate('Artist')}}</label>
                             <div class="col-md-8">
-                                <select class="form-control aiz-selectpicker" name="brand_id" id="brand_id" data-live-search="true">
+                                <!--<select class="form-control aiz-selectpicker" name="brand_id" id="brand_id" data-live-search="true">
                                     <option value="">{{ translate('Select Brand') }}</option>
                                     @foreach (\App\Models\Brand::all() as $brand)
                                     <option value="{{ $brand->id }}">{{ $brand->getTranslation('name') }}</option>
                                     @endforeach
-                                </select>
+                                </select>-->
+                                <input type="text" class="form-control" name="brand_id" id="brand_id" placeholder="{{ Auth::user()->name }}"  required>
+                            
                             </div>
                         </div>
                         <div class="form-group row">
