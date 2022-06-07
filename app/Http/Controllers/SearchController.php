@@ -188,7 +188,7 @@ class SearchController extends Controller
                     ->where('artist_name', 'like', '%'.$query.'%')
                     ->get()
                     ->take(3);
-        if(sizeof($keywords)>0 || sizeof($categories)>0 || sizeof($products)>0 || sizeof($shops) >0 || sizeof($artist)){
+        if(sizeof($keywords)>0 || sizeof($categories)>0 || sizeof($products)>0 || sizeof($shops) >0 || sizeof($artist)>0){
             return view('frontend.partials.search_content', compact('products', 'categories', 'keywords', 'shops' , 'artist'));
         }
         return '0';

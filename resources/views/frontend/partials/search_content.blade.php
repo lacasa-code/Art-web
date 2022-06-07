@@ -78,8 +78,7 @@
             </ul>
         @endif
     </div>
-@endif
-<div class="">
+    <div class="">
     @if (count($artist) > 0)
         <div class="px-2 py-1 text-uppercase fs-10 text-right text-muted bg-soft-secondary">{{translate('Artists')}}</div>
         <ul class="list-group list-group-raw">
@@ -105,3 +104,4 @@
         </ul>
     @endif
 </div>
+@endif
