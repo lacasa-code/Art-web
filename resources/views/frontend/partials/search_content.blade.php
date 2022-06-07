@@ -79,3 +79,29 @@
         @endif
     </div>
 @endif
+<div class="">
+    @if (count($artist) > 0)
+        <div class="px-2 py-1 text-uppercase fs-10 text-right text-muted bg-soft-secondary">{{translate('Artists')}}</div>
+        <ul class="list-group list-group-raw">
+            @foreach ($artist as $key => $artist)
+                <li class="list-group-item">
+                    <a class="text-reset" href="{{ route('shop.visit', $artist->slug) }}">
+                            <div class="d-flex search-product align-items-center">
+                                <div class="mr-3">
+                                    <img class="size-40px img-fit rounded" src="{{ uploaded_asset($artist->logo) }}">
+                                </div>
+                                <div class="flex-grow-1 overflow--hidden">
+                                    <div class="product-name text-truncate fs-14 mb-5px">
+                                        {{ $artist->artist_name }}
+                                    </div>
+                                    <div class="opacity-60">
+                                        {{ $artist->address }}
+                                    </div>
+                                </div>
+                            </div>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    @endif
+</div>

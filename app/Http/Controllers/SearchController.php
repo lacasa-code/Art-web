@@ -10,6 +10,7 @@ use App\Models\FlashDeal;
 use App\Models\Brand;
 use App\Models\Color;
 use App\Models\Shop;
+use App\Models\User;
 use App\Models\Attribute;
 use App\Models\AttributeCategory;
 use App\Utility\CategoryUtility;
@@ -179,11 +180,16 @@ class SearchController extends Controller
                     ->get();
 
         $categories = Category::where('name', 'like', '%'.$query.'%')->get()->take(3);
-
+    
         $shops = Shop::whereIn('user_id', verified_sellers_id())->where('name', 'like', '%'.$query.'%')->get()->take(3);
 
-        if(sizeof($keywords)>0 || sizeof($categories)>0 || sizeof($products)>0 || sizeof($shops) >0){
-            return view('frontend.partials.search_content', compact('products', 'categories', 'keywords', 'shops'));
+        $artist = Shop::join('users','shops.user_id','users.id')
+                    ->select('users.name as artist_name','shops.logo as logo','slug','shops.address as address')
+                    ->where('artist_name', 'like', '%'.$query.'%')
+                    ->get()
+                    ->take(3);
+        if(sizeof($keywords)>0 || sizeof($categories)>0 || sizeof($products)>0 || sizeof($shops) >0 || sizeof($artist)){
+            return view('frontend.partials.search_content', compact('products', 'categories', 'keywords', 'shops' , 'artist'));
         }
         return '0';
     }
