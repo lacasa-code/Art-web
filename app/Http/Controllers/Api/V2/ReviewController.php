@@ -30,7 +30,7 @@ class ReviewController extends Controller
                                         @endforeach
         */
 
-        $reviewable = false;
+        /*$reviewable = false;
 
         foreach ($product->orderDetails as $key => $orderDetail) {
             if($orderDetail->order != null && $orderDetail->order->user_id == $request->user_id && $orderDetail->delivery_status == 'delivered' && \App\Models\Review::where('user_id', $request->user_id)->where('product_id', $product->id)->first() == null){
@@ -43,7 +43,7 @@ class ReviewController extends Controller
                 'result' => false,
                 'message' => translate('You cannot review this product')
             ]);
-        }
+        }*/
 
         $review = new \App\Models\Review;
         $review->product_id = $request->product_id;
