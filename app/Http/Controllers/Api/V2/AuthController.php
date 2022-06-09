@@ -133,7 +133,15 @@ class AuthController extends Controller
             if (Hash::check($request->password, $user->password)) {
 
                 if ($user->email_verified_at == null) {
-                    return response()->json(['message' => translate('Please verify your account'), 'user' => null], 401);
+                    return response()->json(['message' => translate('Please verify your account'), 'user' => [
+                        'id' => $user->id,
+                        'type' => $user->user_type,
+                        'name' => $user->name,
+                        'email' => $user->email,
+                        'avatar' => $user->avatar,
+                        'avatar_original' => api_asset($user->avatar_original),
+                        'phone' => $user->phone
+                    ]], 401);
                 }
                 $tokenResult = $user->createToken('Personal Access Token');
                 return $this->loginSuccess($tokenResult, $user);
