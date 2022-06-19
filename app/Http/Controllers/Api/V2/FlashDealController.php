@@ -21,11 +21,10 @@ class FlashDealController extends Controller
         $products = collect();
        
         foreach ($flash_deal->flashDealProducts as $key => $flash_deal_product) {
-            //if(Product::find($flash_deal_product->product_id) != null){
+            if(Product::find($flash_deal_product->product_id) != null){
                 $products->push(Product::find($flash_deal_product->product_id));
-            //}
+            }
         }
-        dd($products);
         return new ProductMiniCollection($products);
     }
 }
