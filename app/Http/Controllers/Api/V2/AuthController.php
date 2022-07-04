@@ -146,7 +146,7 @@ class AuthController extends Controller
                 $tokenResult = $user->createToken('Personal Access Token');
                 return $this->loginSuccess($tokenResult, $user);
             } else {
-                return response()->json(['result' => false, 'message' => translate('Unauthorized'), 'user' => null], 401);
+                return response()->json(['result' => false, 'message' => translate('Invalid email or password please try again'), 'user' => null], 401);
             }
         } else {
             return response()->json(['result' => false, 'message' => translate('User not found'), 'user' => null], 401);
