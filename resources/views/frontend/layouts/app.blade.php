@@ -148,7 +148,7 @@
 @endphp
 
 </head>
-<body>
+<body style="background-color: #1D4C58;">
     <!-- aiz-main-wrapper -->
     <div class="aiz-main-wrapper d-flex flex-column">
 
