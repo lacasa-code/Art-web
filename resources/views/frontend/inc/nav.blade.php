@@ -1,4 +1,4 @@
-<body BGCOLOR="#1D4C58">
+<body style="background-color: #1D4C58;">
 
 </body>
 @if(get_setting('topbar_banner') != null)
