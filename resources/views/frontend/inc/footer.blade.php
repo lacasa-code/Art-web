@@ -29,7 +29,7 @@
     </div>
 </section>
 
-<section class="bg-dark py-5 text-light footer-widget">
+<section class=" py-5 text-light footer-widget" style="background-color: #1D4C58;">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-xl-4 text-center text-md-left">
