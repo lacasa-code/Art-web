@@ -150,13 +150,13 @@
                             <a href="{{ route('logout') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('Logout')}}</a>
                         </li>
                     @else
-                        <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
+                        <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0" style="color: #FFFFFF;">
                             <a href="{{ route('user.login') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('Login')}}</a>
                         </li>
-                        <li class="list-inline-item">
+                        <li class="list-inline-item" style="color: #FFFFFF;">
                             <a href="{{ route('user.registration') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;"> {{ translate('Registration')}}</a>
                         </li>
-                        <li class="list-inline-item">
+                        <li class="list-inline-item" style="color: #FFFFFF;">
                             <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md" style="color: #FFFFFF;">
                                {{ translate('Be a Seller') }}
                             </a>
