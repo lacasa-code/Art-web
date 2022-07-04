@@ -1,8 +1,4 @@
-<style>
-    .top-navbar-custom {
-    background-color: #2A3F54;
-}
-</style>
+
 @if(get_setting('topbar_banner') != null)
 <div class="position-relative top-banner removable-session z-1035 d-none" data-key="top-banner" data-value="removed">
     <a href="{{ get_setting('topbar_banner_link') }}" class="d-block text-reset">
@@ -14,7 +10,7 @@
 </div>
 @endif
 <!-- Top Bar -->
-<div class="top-navbar border-bottom border-soft-secondary z-1035" style="background-color: 2A3F54;">
+<div class="top-navbar border-bottom border-soft-secondary z-1035" style="background-color: #2A3F54;">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col">
