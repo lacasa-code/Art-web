@@ -1,4 +1,4 @@
-<section class="bg-white border-top mt-auto">
+<section class="bg-white border-top mt-auto" style="background-color: #1D4C58;">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-lg-3 col-md-6">
