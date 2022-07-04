@@ -90,13 +90,13 @@
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
             color: #1D4C58;
-            background-color: lightblue;
+            background-color: #1D4C58;
 
         }
         :root{
-            --primary: {{ get_setting('base_color', '#e62d04') }};
+            --primary: {{ get_setting('base_color', '#1D4C58') }};
             --hov-primary: {{ get_setting('base_hov_color', '#c52907') }};
-            --soft-primary: {{ hex2rgba(get_setting('base_color','#e62d04'),.15) }};
+            --soft-primary: {{ hex2rgba(get_setting('base_color','#1D4C58'),.15) }};
         }
 
         #map{
