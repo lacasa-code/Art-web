@@ -34,7 +34,7 @@
                                 <li>
                                     <a href="javascript:void(0)" data-flag="{{ $language->code }}" class="dropdown-item @if($locale == $language) active @endif">
                                         <img src="{{ static_asset('assets/img/placeholder.jpg') }}" data-src="{{ static_asset('assets/img/flags/'.$language->code.'.png') }}" class="mr-1 lazyload" alt="{{ $language->name }}" height="11">
-                                        <span class="language">{{ $language->name }}</span>
+                                        <span class="language" style="color: #FFFFFF;">{{ $language->name }}</span>
                                     </a>
                                 </li>
                             @endforeach
@@ -72,7 +72,7 @@
                     @auth
                         @if(isAdmin())
                             <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
-                                <a href="{{ route('admin.dashboard') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('My Panel')}}</a>
+                                <a href="{{ route('admin.dashboard') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('My Panel')}}</a>
                             </li>
                         @else
 
@@ -137,7 +137,7 @@
                             </li>
 
                             <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
-                                <a href="{{ route('dashboard') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('My Panel')}}</a>
+                                <a href="{{ route('dashboard') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('My Panel')}}</a>
                             </li>
                             <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
                                 <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md">
@@ -147,17 +147,17 @@
 
                         @endif
                         <li class="list-inline-item">
-                            <a href="{{ route('logout') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('Logout')}}</a>
+                            <a href="{{ route('logout') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('Logout')}}</a>
                         </li>
                     @else
                         <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
-                            <a href="{{ route('user.login') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('Login')}}</a>
+                            <a href="{{ route('user.login') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('Login')}}</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="{{ route('user.registration') }}" class="text-reset d-inline-block opacity-60 py-2">{{ translate('Registration')}}</a>
+                            <a href="{{ route('user.registration') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;"> {{ translate('Registration')}}</a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md">
+                            <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md" style="color: #FFFFFF;">
                                {{ translate('Be a Seller') }}
                             </a>
                         </li>
