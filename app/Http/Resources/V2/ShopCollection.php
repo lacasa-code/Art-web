@@ -13,7 +13,9 @@ class ShopCollection extends ResourceCollection
                 return [
                     'id' => $data->id,
                     'name' => $data->name,
-                    'logo' => api_asset($data->logo)
+                    'logo' => api_asset($data->logo),
+                    'username' => $data->user->name,
+                    'avatar' => $data->user->avatar
                 ];
             })
         ];
