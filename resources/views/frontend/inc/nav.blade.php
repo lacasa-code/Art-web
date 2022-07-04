@@ -1,4 +1,11 @@
-
+<style>
+    .icon-cog {
+  color: #1D4C58;
+}
+.fa-cog {
+  color: #1D4C58;
+}
+</style>
 @if(get_setting('topbar_banner') != null)
 <div class="position-relative top-banner removable-session z-1035 d-none" data-key="top-banner" data-value="removed">
     <a href="{{ get_setting('topbar_banner_link') }}" class="d-block text-reset">
