@@ -164,7 +164,7 @@
                             <a href="{{ route('user.registration') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;"> {{ translate('Registration')}}</a>
                         </li>
                         <li class="list-inline-item" style="color: #FFFFFF;">
-                            <a href="{{ route('shops.create') }}" class="btn btn-primary btn-sm shadow-md" style="color: #FFFFFF;">
+                            <a href="{{ route('shops.create') }}"  style="color: #FFFFFF;">
                                {{ translate('Be a Seller') }}
                             </a>
                         </li>
