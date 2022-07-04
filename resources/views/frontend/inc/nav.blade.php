@@ -169,7 +169,7 @@
 </div>
 <!-- END Top Bar -->
 <header class="@if(get_setting('header_stikcy') == 'on') sticky-top @endif z-1020 bg-white border-bottom shadow-sm" style="background-color: #1D4C58;">
-    <div class="position-relative logo-bar-area z-1">
+    <div class="position-relative logo-bar-area z-1" style="background-color: #1D4C58;">
         <div class="container" style="background-color: #1D4C58;">
             <div class="d-flex align-items-center">
 
