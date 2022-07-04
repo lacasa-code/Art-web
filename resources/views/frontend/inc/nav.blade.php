@@ -153,7 +153,7 @@
                             </li>
 
                         @endif
-                        <li class="list-inline-item">
+                        <li class="list-inline-item" style="color: #FFFFFF;">
                             <a href="{{ route('logout') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('Logout')}}</a>
                         </li>
                     @else
