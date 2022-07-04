@@ -1,5 +1,5 @@
 <style>
-    .navbar-custom {
+    .top-navbar-custom {
     background-color: #2A3F54;
 }
 </style>
