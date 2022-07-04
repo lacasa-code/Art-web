@@ -89,6 +89,9 @@
         body{
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
+            color: #1D4C58;
+            background-color: #1D4C58;
+
         }
         :root{
             --primary: {{ get_setting('base_color', '#e62d04') }};
