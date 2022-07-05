@@ -150,7 +150,7 @@
 </head>
 <body style="background-color: #1D4C58;">
     <!-- aiz-main-wrapper -->
-    <div class="aiz-main-wrapper d-flex flex-column">
+    <div class="aiz-main-wrapper d-flex flex-column" style="background-color: #1D4C58;">
 
         <!-- Header -->
         @include('frontend.inc.nav')
