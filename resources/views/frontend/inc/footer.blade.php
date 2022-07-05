@@ -1,5 +1,5 @@
-<section class="bg-white border-top mt-auto" style="background-color: #1D4C58;">
-    <div class="container" style="background-color: #1D4C58;">
+<section class=" border-top mt-auto" style="background-color: #1D4C58;">
+    <div class="container" >
         <div class="row no-gutters">
             <div class="col-lg-3 col-md-6">
                 <a class="text-reset border-left text-center p-4 d-block" href="{{ route('terms') }}">
