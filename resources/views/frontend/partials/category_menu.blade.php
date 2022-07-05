@@ -2,10 +2,10 @@
     <div class="p-3  d-none d-lg-block rounded-top all-category position-relative text-left">
         <span class="fw-600 fs-16 mr-3" style="color: #FFFFFF;">{{ translate('Categories') }}</span>
         <a href="{{ route('categories.all') }}" class="text-reset">
-            <span class="d-none d-lg-inline-block">{{ translate('See All') }} ></span>
+            <span class="d-none d-lg-inline-block" style="color: #FFFFFF;">{{ translate('See All') }} ></span>
         </a>
     </div>
-    <ul class="list-unstyled categories no-scrollbar py-2 mb-0 text-left">
+    <ul class="list-unstyled categories no-scrollbar py-2 mb-0 text-left" style="color: #FFFFFF;">
         @foreach (\App\Models\Category::where('level', 0)->orderBy('order_level', 'desc')->get()->take(11) as $key => $category)
             <li class="category-nav-element" data-id="{{ $category->id }}">
                 <a href="{{ route('products.category', $category->slug) }}" class="text-truncate text-reset py-2 px-3 d-block">
@@ -17,7 +17,7 @@
                         alt="{{ $category->getTranslation('name') }}"
                         onerror="this.onerror=null;this.src='{{ static_asset('assets/img/placeholder.jpg') }}';"
                     >
-                    <span class="cat-name">{{ $category->getTranslation('name') }}</span>
+                    <span class="cat-name" style="color: #FFFFFF;">{{ $category->getTranslation('name') }}</span>
                 </a>
                 @if(count(\App\Utility\CategoryUtility::get_immediate_children_ids($category->id))>0)
                     <div class="sub-cat-menu c-scrollbar-light rounded shadow-lg p-4">
