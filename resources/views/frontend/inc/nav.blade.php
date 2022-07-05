@@ -282,8 +282,8 @@
         @endif
     </div>
     @if ( get_setting('header_menu_labels') !=  null )
-        <div class="bg-white border-top border-gray-200 py-1" style="background-color: #1D4C58;">
-            <div class="container">
+        <div class=" border-top border-gray-200 py-1" style="background-color: #1D4C58;">
+            <div class="container" style="background-color: #1D4C58;">
                 <ul class="list-inline mb-0 pl-0 mobile-hor-swipe text-center">
                     @foreach (json_decode( get_setting('header_menu_labels'), true) as $key => $value)
                     <li class="list-inline-item mr-0">
