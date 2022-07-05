@@ -48,9 +48,9 @@
                         <form class="form-inline" method="POST" action="{{ route('subscribers.store') }}">
                             @csrf
                             <div class="form-group mb-0">
-                                <input type="email" class="form-control" style="border:#40A6BF;" placeholder="{{ translate('Your Email Address') }}" name="email" required>
+                                <input type="email" class="form-control" style="border:#40A6BF solid;" placeholder="{{ translate('Your Email Address') }}" name="email" required>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="color: #1D4C58;border:#40A6BF;">
+                            <button type="submit" class="btn btn-primary" style="color: #1D4C58;border:#40A6BF solid;">
                                 {{ translate('Subscribe') }}
                             </button>
                         </form>
