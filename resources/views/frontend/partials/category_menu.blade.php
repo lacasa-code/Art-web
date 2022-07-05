@@ -1,6 +1,6 @@
-<div class="aiz-category-menu bg-white rounded @if(Route::currentRouteName() == 'home') shadow-sm" @else shadow-lg" id="category-sidebar" @endif>
-    <div class="p-3 bg-soft-primary d-none d-lg-block rounded-top all-category position-relative text-left">
-        <span class="fw-600 fs-16 mr-3">{{ translate('Categories') }}</span>
+<div class="aiz-category-menu rounded style="background-color: #1D4C58;" @if(Route::currentRouteName() == 'home') shadow-sm" @else shadow-lg" id="category-sidebar" @endif>
+    <div class="p-3  d-none d-lg-block rounded-top all-category position-relative text-left">
+        <span class="fw-600 fs-16 mr-3" style="color: #FFFFFF;">{{ translate('Categories') }}</span>
         <a href="{{ route('categories.all') }}" class="text-reset">
             <span class="d-none d-lg-inline-block">{{ translate('See All') }} ></span>
         </a>
