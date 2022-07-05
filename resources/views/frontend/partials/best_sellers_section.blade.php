@@ -31,7 +31,7 @@
                                     </div>
                                     <div class="col-8 border-left border-light">
                                         <div class="p-3 text-left">
-                                            <h2 class="h6 fw-600 text-truncate">
+                                            <h2 class="h6 fw-600 text-truncate" style="color: #FFFFFF;">
                                                 <a href="{{ route('shop.visit', $seller->user->shop->slug) }}" class="text-reset" style="color: #FFFFFF;">{{ $seller->user->shop->name }}</a>
                                             </h2>
                                             <div class="rating rating-sm mb-2">
