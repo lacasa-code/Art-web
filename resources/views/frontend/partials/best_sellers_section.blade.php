@@ -7,10 +7,10 @@
 @if (get_setting('vendor_system_activation') == 1)
     <section class="mb-4">
         <div class="container">
-            <div class="px-2 py-4 px-md-4 py-md-3 bg-white shadow-sm rounded">
+            <div class="px-2 py-4 px-md-4 py-md-3  shadow-sm rounded" style="background-color: #1D4C58;">
                 <div class="d-flex mb-3 align-items-baseline border-bottom">
                     <h3 class="h5 fw-700 mb-0">
-                        <span class="border-bottom border-primary border-width-2 pb-3 d-inline-block">{{ translate('Best Sellers')}}</span>
+                        <span class=" border-primary border-width-2 pb-3 d-inline-block" style="color: #FFFFFF;">{{ translate('Best Sellers')}}</span>
                     </h3>
                     <a href="{{ route('sellers') }}" class="ml-auto mr-0 btn btn-primary btn-sm shadow-md">{{ translate('View All Sellers') }}</a>
                 </div>
