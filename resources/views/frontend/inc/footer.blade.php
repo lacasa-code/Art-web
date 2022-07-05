@@ -50,7 +50,7 @@
                             <div class="form-group mb-0">
                                 <input type="email" class="form-control" placeholder="{{ translate('Your Email Address') }}" name="email" required>
                             </div>
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary" style="color: #1D4C58;">
                                 {{ translate('Subscribe') }}
                             </button>
                         </form>
@@ -178,7 +178,7 @@
             </div>
             <div class="col-lg-4">
                 @if ( get_setting('show_social_links') )
-                <ul class="list-inline my-3 my-md-0 social colored text-center">
+                <ul class="list-inline my-3 my-md-0 social colored text-center" style="background-color: #1D4C58;">
                     @if ( get_setting('facebook_link') !=  null )
                     <li class="list-inline-item">
                         <a href="{{ get_setting('facebook_link') }}" target="_blank" class="facebook"><i class="lab la-facebook-f"></i></a>
