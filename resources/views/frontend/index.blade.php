@@ -61,7 +61,7 @@
                 @if($num_todays_deal > 0)
                 <div class="col-lg-2 order-3 mt-3 mt-lg-0">
                     <div class="rounded shadow-sm" style="background-color: #1D4C58;">
-                        <div class="bg-soft-primary rounded-top p-3 d-flex align-items-center justify-content-center">
+                        <div class="rounded-top p-3 d-flex align-items-center justify-content-center">
                             <span class="fw-600 fs-16 mr-2 text-truncate" style="color: #FFFFFF;">
                                 {{ translate('Todays Deal') }}
                             </span>
