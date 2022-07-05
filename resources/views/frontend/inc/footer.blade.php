@@ -168,8 +168,8 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="pt-3 pb-7 pb-xl-3 bg-black text-light">
-    <div class="container">
+<footer class="pt-3 pb-7 pb-xl-3 bg-black text-light" style="background-color: #1D4C58;">
+    <div class="container" style="background-color: #1D4C58;">
         <div class="row align-items-center">
             <div class="col-lg-4">
                 <div class="text-center text-md-left" current-verison="{{get_setting("current_version")}}">
