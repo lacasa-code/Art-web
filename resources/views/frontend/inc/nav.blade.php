@@ -250,19 +250,19 @@
                 </div>
 
                 <div class="d-none d-lg-block ml-3 mr-0">
-                    <div class="" id="compare" style="background-color: #FFFFFF;">
+                    <div class="" id="compare" style="color: #FFFFFF;">
                         @include('frontend.partials.compare')
                     </div>
                 </div>
 
                 <div class="d-none d-lg-block ml-3 mr-0" >
-                    <div class="" id="wishlist" style="background-color: #FFFFFF;">
+                    <div class="" id="wishlist" style="color: #FFFFFF;">
                         @include('frontend.partials.wishlist')
                     </div>
                 </div>
 
                 <div class="d-none d-lg-block  align-self-stretch ml-3 mr-0" data-hover="dropdown">
-                    <div class="nav-cart-box dropdown h-100" id="cart_items" style="background-color: #FFFFFF;">
+                    <div class="nav-cart-box dropdown h-100" id="cart_items" style="color: #FFFFFF;">
                         @include('frontend.partials.cart')
                     </div>
                 </div>
