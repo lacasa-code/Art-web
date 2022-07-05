@@ -1,7 +1,7 @@
 <section class=" border-top mt-auto" style="background-color: #1D4C58;">
     <div class="container" >
         <div class="row no-gutters">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6" style="background-color: #FFFFFF;">
                 <a class="text-reset border-left text-center p-4 d-block" href="{{ route('terms') }}">
                     <i class="la la-file-text la-3x text-primary mb-2"></i>
                     <h4 class="h6">{{ translate('Terms & conditions') }}</h4>
