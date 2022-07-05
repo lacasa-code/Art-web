@@ -256,7 +256,7 @@
                 </div>
 
                 <div class="d-none d-lg-block ml-3 mr-0" >
-                    <div class="" id="wishlist">
+                    <div class="" id="wishlist" style="color: #FFFFFF;">
                         @include('frontend.partials.wishlist')
                     </div>
                 </div>
