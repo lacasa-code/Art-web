@@ -15,7 +15,7 @@
             </div>
             <div class="col-lg-3 col-md-6" style="background-color: #FFFFFF;">
                 <a class="text-reset border-left text-center p-4 d-block" href="{{ route('supportpolicy') }}">
-                    <i class="la la-support la-3x text-primary mb-2"></i>
+                    <i class="la la-support la-3x  mb-2" style="--fa-primary-color: gold;"></i>
                     <h4 class="h6">{{ translate('Support Policy') }}</h4>
                 </a>
             </div>
