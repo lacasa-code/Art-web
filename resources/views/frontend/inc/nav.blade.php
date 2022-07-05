@@ -287,7 +287,7 @@
                 <ul class="list-inline mb-0 pl-0 mobile-hor-swipe text-center">
                     @foreach (json_decode( get_setting('header_menu_labels'), true) as $key => $value)
                     <li class="list-inline-item mr-0">
-                        <a href="{{ json_decode( get_setting('header_menu_links'), true)[$key] }}" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
+                        <a href="{{ json_decode( get_setting('header_menu_links'), true)[$key] }}"  style="color: #FFFFFF;" class="opacity-60 fs-14 px-3 py-2 d-inline-block fw-600 hov-opacity-100 text-reset">
                             {{ translate($value) }}
                         </a>
                     </li>
