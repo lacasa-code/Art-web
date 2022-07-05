@@ -186,7 +186,7 @@
                             $header_logo = get_setting('header_logo');
                         @endphp
                         @if($header_logo != null)
-                            <img src="{{ uploaded_asset($header_logo) }}" alt="{{ env('APP_NAME') }}" class="mw-100 h-30px h-md-40px" height="40">
+                            <img src="{{ uploaded_asset($header_logo) }}" alt="{{ env('APP_NAME') }}" class="mw-100 h-30px h-md-40px" height="80">
                         @else
                             <img src="{{ static_asset('assets/img/dark.png') }}" alt="{{ env('APP_NAME') }}" class="mw-100 h-30px h-md-40px" height="40">
                         @endif
@@ -249,14 +249,14 @@
                     </div>
                 </div>
 
-                <div class="d-none d-lg-block ml-3 mr-0" style="color: #FFFFFF;">
-                    <div class="" id="compare" >
+                <div class="d-none d-lg-block ml-3 mr-0" >
+                    <div class="" id="compare" style="color: #FFFFFF;">
                         @include('frontend.partials.compare')
                     </div>
                 </div>
 
                 <div class="d-none d-lg-block ml-3 mr-0" >
-                    <div class="" id="wishlist" style="color: #FFFFFF;">
+                    <div class="" id="wishlist">
                         @include('frontend.partials.wishlist')
                     </div>
                 </div>
