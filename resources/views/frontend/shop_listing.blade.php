@@ -9,10 +9,10 @@
             </div>
             <div class="col-lg-6">
                 <ul class="breadcrumb bg-transparent p-0 justify-content-center justify-content-lg-end">
-                    <li class="breadcrumb-item opacity-50">
+                    <li class="breadcrumb-item opacity-50" style="color: black;">
                         <a class="text-reset" href="{{ route('home') }}">{{ translate('Home')}}</a>
                     </li>
-                    <li class="text-dark fw-600 breadcrumb-item">
+                    <li class="text-dark fw-600 breadcrumb-item" style="color: #FFFFFF;">
                         <a class="text-reset" href="{{ route('sellers') }}">"{{ translate('All Sellers') }}"</a>
                     </li>
                 </ul>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="col-8 border-left border-light">
                                     <div class="p-3 text-left">
-                                        <h2 class="h6 fw-600 text-truncate">
+                                        <h2 class="h6 fw-600 text-truncate" style="color: #FFFFFF;">
                                             <a href="{{ route('shop.visit', $shop->slug) }}" class="text-reset" tabindex="0">{{ $shop->name }}</a>
                                         </h2>
                                         <div class="rating rating-sm mb-2">
