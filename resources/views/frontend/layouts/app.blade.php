@@ -89,7 +89,7 @@
         body{
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
-            color: #ffffff;
+            color: #1D4C58;
             background-color: #1D4C58;
 
         }
