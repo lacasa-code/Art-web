@@ -221,7 +221,7 @@
                                     @endisset placeholder="{{translate('I am shopping for...')}}" autocomplete="off">
                                     <div class="input-group-append d-none d-lg-block">
                                         <button class="btn btn-primary" type="submit">
-                                            <i class="la la-search la-flip-horizontal fs-18"></i>
+                                            <i class="la la-search la-flip-horizontal fs-18" style="color: #42a6c1;"></i>
                                         </button>
                                     </div>
                                 </div>
