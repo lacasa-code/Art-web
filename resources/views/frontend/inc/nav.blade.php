@@ -78,7 +78,7 @@
                 <ul class="list-inline mb-0 h-100 d-flex justify-content-end align-items-center">
                     @auth
                         @if(isAdmin())
-                            <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0">
+                            <li class="list-inline-item mr-3 border-right border-left-0 pr-3 pl-0" style="color: #FFFFFF;">
                                 <a href="{{ route('admin.dashboard') }}" class="text-reset d-inline-block opacity-60 py-2" style="color: #FFFFFF;">{{ translate('My Panel')}}</a>
                             </li>
                         @else
