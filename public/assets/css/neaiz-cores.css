@@ -8512,7 +8512,7 @@ input[type="number"] {
 .btn-primary,
 .btn-soft-primary:hover,
 .btn-outline-primary:hover {
-    background-color: var(--primary);
+    background-color: #1d4c59;
     border-color: var(--primary);
     color: var(--white);
 }
