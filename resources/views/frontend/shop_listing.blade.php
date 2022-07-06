@@ -4,7 +4,7 @@
 <section class="pt-4 mb-4">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 text-center text-lg-left">
+            <div class="col-lg-6 text-center text-lg-left" style="color: #FFFFFF;">
                 <h1 class="fw-600 h4">{{ translate('All Sellers') }}</h1>
             </div>
             <div class="col-lg-6">
@@ -12,7 +12,7 @@
                     <li class="breadcrumb-item opacity-50" style="color: black;">
                         <a class="text-reset" href="{{ route('home') }}">{{ translate('Home')}}</a>
                     </li>
-                    <li class=" fw-600 breadcrumb-item" style="color: #FFFFFF;">
+                    <li class="text-dark fw-600 breadcrumb-item" >
                         <a class="text-reset" href="{{ route('sellers') }}">"{{ translate('All Sellers') }}"</a>
                     </li>
                 </ul>
