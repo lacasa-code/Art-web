@@ -12,7 +12,7 @@
                     <li class="breadcrumb-item opacity-50" style="color: black;">
                         <a class="text-reset" href="{{ route('home') }}">{{ translate('Home')}}</a>
                     </li>
-                    <li class="text-dark fw-600 breadcrumb-item" style="color: #FFFFFF;">
+                    <li class=" fw-600 breadcrumb-item" style="color: #FFFFFF;">
                         <a class="text-reset" href="{{ route('sellers') }}">"{{ translate('All Sellers') }}"</a>
                     </li>
                 </ul>
