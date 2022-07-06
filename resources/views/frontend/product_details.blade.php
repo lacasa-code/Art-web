@@ -106,7 +106,7 @@
                             </h1>
 
                             <div class="row align-items-center">
-                                <div class="col-12">
+                                <div class="col-12" style="color: #FFFFFF;">
                                     @php
                                         $total = 0;
                                         $total += $detailedProduct->reviews->count();
@@ -114,7 +114,7 @@
                                     <span class="rating">
                                         {{ renderStarRating($detailedProduct->rating) }}
                                     </span>
-                                    <span class="ml-1 opacity-50">({{ $total }} {{ translate('reviews')}})</span>
+                                    <span class="ml-1 opacity-50" style="color: #FFFFFF;">({{ $total }} {{ translate('reviews')}})</span>
                                 </div>
                                 @if ($detailedProduct->est_shipping_days)
                                 <div class="col-auto ml">

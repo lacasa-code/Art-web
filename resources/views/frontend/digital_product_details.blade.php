@@ -85,15 +85,15 @@
                             </h1>
 
                             <div class="row align-items-center">
-                                <div class="col-6">
+                                <div class="col-6" style="color: #FFFFFF;">
                                     @php
                                         $total = 0;
                                         $total += $detailedProduct->reviews->count();
                                     @endphp
-                                    <span class="rating">
+                                    <span class="rating" >
                                         {{ renderStarRating($detailedProduct->rating) }}
                                     </span>
-                                    <span class="ml-1 opacity-50">({{ $total }} {{ translate('reviews')}})</span>
+                                    <span class="ml-1 opacity-50" style="color: #FFFFFF;">({{ $total }} {{ translate('reviews')}})</span>
                                 </div>
                                 <div class="col-6 text-right">
                                     @php
