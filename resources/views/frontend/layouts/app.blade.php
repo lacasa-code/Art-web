@@ -55,7 +55,7 @@
     @if(\App\Models\Language::where('code', Session::get('locale', Config::get('app.locale')))->first()->rtl == 1)
     <link rel="stylesheet" href="{{ static_asset('assets/css/cebootstrap-rtl.min.css') }}">
     @endif
-    <link rel="stylesheet" href="{{ static_asset('assets/css/wwneaiz-cores.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/vwneaiz-cores.css') }}">
     <link rel="stylesheet" href="{{ static_asset('assets/css/custom-style.css') }}">
 
 
@@ -89,7 +89,7 @@
         body{
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
-            //color: #ffffff;
+            color: #ffffff;
             background-color: #1D4C58;
 
         }
