@@ -53,7 +53,7 @@
                                     </div>
                                 @endif
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" style="background-color: #1D4C58; color:#FFFFFF;">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" >
                                 {{ translate('Login') }}
                             </button>
                         </form>
