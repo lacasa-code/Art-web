@@ -83,7 +83,7 @@
                                         </div>
 
                                         <div class="mb-5">
-                                            <button type="submit" class="btn btn-primary btn-block fw-600">{{  translate('Create Account') }}</button>
+                                            <button type="submit" class="btn btn-primary btn-block fw-600" style="background-color: #1D4C58;color:#FFFFFF">{{  translate('Create Account') }}</button>
                                         </div>
                                     </form>
                                     @if(get_setting('google_login') == 1 || get_setting('facebook_login') == 1 || get_setting('twitter_login') == 1)

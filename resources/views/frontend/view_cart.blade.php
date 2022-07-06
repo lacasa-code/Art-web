@@ -227,7 +227,7 @@
                             </div>
 
                             <div class="mb-5">
-                                <button type="submit" class="btn btn-primary btn-block fw-600">{{  translate('Login') }}</button>
+                                <button type="submit" class="btn btn-primary btn-block fw-600" style="background-color: #1D4C58;color:#FFFFFF">{{  translate('Login') }}</button>
                             </div>
                         </form>
 
