@@ -95,7 +95,7 @@
                                     </span>
                                     <span class="ml-1 opacity-50" style="color: #FFFFFF;">({{ $total }} {{ translate('reviews')}})</span>
                                 </div>
-                                <div class="col-6 text-right">
+                                <div class="col-6 text-right"  >
                                     @php
                                         $qty = 0;
                                         //if($detailedProduct->variant_product){
@@ -115,10 +115,10 @@
                             <hr>
 
                             <div class="row align-items-center">
-                                <div class="col-auto">
-                                    <small class="mr-2 opacity-50">{{ translate('Sold by')}}: </small><br>
+                                <div class="col-auto"  style="color: #FFFFFF;">
+                                    <small class="mr-2 opacity-50"  style="color: #FFFFFF;">{{ translate('Sold by')}}: </small><br>
                                     @if ($detailedProduct->added_by == 'seller' && get_setting('vendor_system_activation') == 1)
-                                        <a href="{{ route('shop.visit', $detailedProduct->user->shop->slug) }}" class="text-reset">{{ $detailedProduct->user->shop->name }}</a>
+                                        <a href="{{ route('shop.visit', $detailedProduct->user->shop->slug) }}"  style="color: #FFFFFF;" >{{ $detailedProduct->user->shop->name }}</a>
                                     @else
                                         {{  translate('Inhouse product') }}
                                     @endif
@@ -142,7 +142,7 @@
 
                                 <div class="row no-gutters mt-3">
                                     <div class="col-2">
-                                        <div class="opacity-50 mt-2">{{ translate('Price')}}:</div>
+                                        <div class="opacity-50 mt-2"  style="color: #FFFFFF;">{{ translate('Price')}}:</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="fs-20 opacity-60">
@@ -158,7 +158,7 @@
 
                                 <div class="row no-gutters mt-2">
                                     <div class="col-2">
-                                        <div class="opacity-50">{{ translate('Discount Price')}}:</div>
+                                        <div class="opacity-50"  style="color: #FFFFFF;">{{ translate('Discount Price')}}:</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="">
@@ -174,7 +174,7 @@
                             @else
                                 <div class="row no-gutters mt-3">
                                     <div class="col-2">
-                                        <div class="opacity-50">{{ translate('Price')}}:</div>
+                                        <div class="opacity-50"  style="color: #FFFFFF;">{{ translate('Price')}}:</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="">
@@ -210,7 +210,7 @@
 
                                 <div class="row no-gutters pb-3 d-none" id="chosen_price_div">
                                     <div class="col-2">
-                                        <div class="opacity-50">{{ translate('Total Price')}}:</div>
+                                        <div class="opacity-50"  style="color: #FFFFFF;">{{ translate('Total Price')}}:</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="product-price">
