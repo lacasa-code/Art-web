@@ -10543,7 +10543,7 @@ a.text-dark:hover {
 }
 
 .text-reset {
-    color: #ffffff!important
+    color: inherit!important
 }
 
 .visible {
