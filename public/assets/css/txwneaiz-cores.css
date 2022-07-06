@@ -8514,7 +8514,7 @@ input[type="number"] {
 .btn-outline-primary:hover {
     background-color: var(--primary);
     border-color: var(--primary);
-    color: var(--white);
+    color: #1d4c59;
 }
 
 .btn-secondary,
@@ -8522,7 +8522,7 @@ input[type="number"] {
 .btn-outline-secondary:hover {
     background-color: var(--secondary);
     border-color: var(--secondary);
-    color: var(--white);
+    color: #1d4c59;
 }
 
 .btn-success,
@@ -8530,7 +8530,7 @@ input[type="number"] {
 .btn-outline-success:hover {
     background-color: var(--success);
     border-color: var(--success);
-    color: var(--white);
+    color: #1d4c59;
 }
 
 .btn-danger,
