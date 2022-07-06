@@ -53,7 +53,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ static_asset('assets/css/evendor.css') }}">
     @if(\App\Models\Language::where('code', Session::get('locale', Config::get('app.locale')))->first()->rtl == 1)
-    <link rel="stylesheet" href="{{ static_asset('assets/css/ebootstrap-rtl.min.css') }}">
+    <link rel="stylesheet" href="{{ static_asset('assets/css/cebootstrap-rtl.min.css') }}">
     @endif
     <link rel="stylesheet" href="{{ static_asset('assets/css/naiz-cores.css') }}">
     <link rel="stylesheet" href="{{ static_asset('assets/css/custom-style.css') }}">
