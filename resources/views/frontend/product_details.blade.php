@@ -546,14 +546,14 @@
                 <div class="col-xl-9 order-0 order-xl-1">
                     <div class="bg-white mb-3 shadow-sm rounded">
                         <div class="nav border-bottom aiz-nav-tabs">
-                            <a href="#tab_default_1" data-toggle="tab" class="p-3 fs-16 fw-600 text-reset active show">{{ translate('Description')}}</a>
+                            <a href="#tab_default_1" data-toggle="tab" class="p-3 fs-16 fw-600 active show">{{ translate('Description')}}</a>
                             @if($detailedProduct->video_link != null)
-                                <a href="#tab_default_2" data-toggle="tab" class="p-3 fs-16 fw-600 text-reset">{{ translate('Video')}}</a>
+                                <a href="#tab_default_2" data-toggle="tab" class="p-3 fs-16 fw-600">{{ translate('Video')}}</a>
                             @endif
                             @if($detailedProduct->pdf != null)
-                                <a href="#tab_default_3" data-toggle="tab" class="p-3 fs-16 fw-600 text-reset">{{ translate('Downloads')}}</a>
+                                <a href="#tab_default_3" data-toggle="tab" class="p-3 fs-16 fw-600">{{ translate('Downloads')}}</a>
                             @endif
-                                <a href="#tab_default_4" data-toggle="tab" class="p-3 fs-16 fw-600 text-reset">{{ translate('Reviews')}}</a>
+                                <a href="#tab_default_4" data-toggle="tab" class="p-3 fs-16 fw-600">{{ translate('Reviews')}}</a>
                         </div>
 
                         <div class="tab-content pt-0">
