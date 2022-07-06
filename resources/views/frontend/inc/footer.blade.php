@@ -50,7 +50,7 @@
                             <div class="form-group mb-0">
                                 <input type="email" class="form-control" style="border:#40A6BF solid;" placeholder="{{ translate('Your Email Address') }}" name="email" required>
                             </div>
-                            <button type="submit" class="btn btn-primary" style="color: ##1d4c59;border:#40A6BF solid; margin-left:10px">
+                            <button type="submit" class="btn btn-primary" style="color: #1d4c59;border:#40A6BF solid; margin-left:10px">
                                 {{ translate('Subscribe') }}
                             </button>
                         </form>
