@@ -3,7 +3,7 @@
 @section('panel_content')
     <div class="aiz-titlebar mt-2 mb-4">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6" style="color: #FFFFFF;">
                 <h1 class="h3" style="color: #FFFFFF;">{{ translate('Dashboard') }}</h1>
             </div>
         </div>
