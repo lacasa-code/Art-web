@@ -8,11 +8,11 @@
                     <img src="{{ static_asset('assets/img/avatar-place.png') }}" class="image rounded-circle" onerror="this.onerror=null;this.src='{{ static_asset('assets/img/avatar-place.png') }}';">
                 @endif
             </span>
-            <h4 class="h5 fs-16 mb-1 fw-600">{{ Auth::user()->name }}</h4>
+            <h4 class="h5 fs-16 mb-1 fw-600" style="color: #1D4C58;">{{ Auth::user()->name }}</h4>
             @if(Auth::user()->phone != null)
-                <div class="text-truncate opacity-60" style="color: #FFFFFF;">{{ Auth::user()->phone }}</div>
+                <div class="text-truncate opacity-60" style="color: #1D4C58;">{{ Auth::user()->phone }}</div>
             @else
-                <div class="text-truncate opacity-60">{{ Auth::user()->email }}</div>
+                <div class="text-truncate opacity-60" style="color: #1D4C58;">{{ Auth::user()->email }}</div>
             @endif
         </div>
 
