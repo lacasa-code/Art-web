@@ -126,7 +126,7 @@
                             <hr>
 
                             <div class="row align-items-center">
-                                <div class="col-auto" style="color: #FFFFFF;">>
+                                <div class="col-auto" style="color: #FFFFFF;">
                                     <small class="mr-2 opacity-50" style="color: #FFFFFF;">{{ translate('Sold by')}}: </small><br>
                                     @if ($detailedProduct->added_by == 'seller' && get_setting('vendor_system_activation') == 1)
                                         <a href="{{ route('shop.visit', $detailedProduct->user->shop->slug) }}" style="color: #FFFFFF;">{{ $detailedProduct->user->shop->name }}</a>
@@ -174,7 +174,7 @@
                                 @if(home_price($detailedProduct) != home_discounted_price($detailedProduct))
                                     <div class="row no-gutters mt-3">
                                         <div class="col-sm-2">
-                                            <div class="opacity-50 my-2" style="color: #FFFFFF;">>{{ translate('Price')}}:</div>
+                                            <div class="opacity-50 my-2" style="color: #FFFFFF;">{{ translate('Price')}}:</div>
                                         </div>
                                         <div class="col-sm-10">
                                             <div class="fs-20 opacity-60">
@@ -190,7 +190,7 @@
 
                                     <div class="row no-gutters my-2">
                                         <div class="col-sm-2">
-                                            <div class="opacity-50" style="color: #FFFFFF;">>{{ translate('Discount Price')}}:</div>
+                                            <div class="opacity-50" style="color: #FFFFFF;">{{ translate('Discount Price')}}:</div>
                                         </div>
                                         <div class="col-sm-10">
                                             <div class="">
@@ -206,7 +206,7 @@
                                 @else
                                     <div class="row no-gutters mt-3">
                                         <div class="col-sm-2">
-                                            <div class="opacity-50 my-2" style="color: #FFFFFF;">>{{ translate('Price')}}:</div>
+                                            <div class="opacity-50 my-2" style="color: #FFFFFF;">{{ translate('Price')}}:</div>
                                         </div>
                                         <div class="col-sm-10">
                                             <div class="">
@@ -286,7 +286,7 @@
                                                         @if($key == 0) checked @endif
                                                     >
                                                     <span class="aiz-megabox-elem rounded d-flex align-items-center justify-content-center p-1 mb-2">
-                                                        <span class="size-30px d-inline-block rounded" style="background: {{ $color }};"></span>
+                                                        <span class="size-30px d-inline-block rounded" ></span>
                                                     </span>
                                                 </label>
                                                 @endforeach
@@ -300,7 +300,7 @@
                                 <!-- Quantity + Add to cart -->
                                 <div class="row no-gutters">
                                     <div class="col-sm-2">
-                                        <div class="opacity-50 my-2" style="color: #FFFFFF;">>{{ translate('Quantity')}}:</div>
+                                        <div class="opacity-50 my-2" style="color: #FFFFFF;">{{ translate('Quantity')}}:</div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="product-quantity d-flex align-items-center">
@@ -321,9 +321,9 @@
                                             @endphp
                                             <div class="avialable-amount opacity-60">
                                                 @if($detailedProduct->stock_visibility_state == 'quantity')
-                                                (<span id="available-quantity" style="color: #FFFFFF;">>{{ $qty }}</span> {{ translate('available')}})
+                                                (<span id="available-quantity" style="color: #FFFFFF;">{{ $qty }}</span> {{ translate('available')}})
                                                 @elseif($detailedProduct->stock_visibility_state == 'text' && $qty >= 1)
-                                                    (<span id="available-quantity" style="color: #FFFFFF;">>{{ translate('In Stock') }}</span>)
+                                                    (<span id="available-quantity" style="color: #FFFFFF;">{{ translate('In Stock') }}</span>)
                                                 @endif
                                             </div>
                                         </div>
@@ -334,7 +334,7 @@
 
                                 <div class="row no-gutters pb-3 d-none" id="chosen_price_div">
                                     <div class="col-sm-2">
-                                        <div class="opacity-50 my-2" style="color: #FFFFFF;">>{{ translate('Total Price')}}:</div>
+                                        <div class="opacity-50 my-2" style="color: #FFFFFF;">{{ translate('Total Price')}}:</div>
                                     </div>
                                     <div class="col-sm-10">
                                         <div class="product-price">
@@ -422,7 +422,7 @@
                             @endif
                             <div class="row no-gutters mt-4">
                                 <div class="col-sm-2">
-                                    <div class="opacity-50 my-2" style="color: #FFFFFF;">>{{ translate('Share')}}:</div>
+                                    <div class="opacity-50 my-2" style="color: #FFFFFF;">{{ translate('Share')}}:</div>
                                 </div>
                                 <div class="col-sm-10">
                                     <div class="aiz-share"></div>
