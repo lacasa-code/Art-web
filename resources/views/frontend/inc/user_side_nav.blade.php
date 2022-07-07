@@ -376,7 +376,7 @@
         </div>
         @if (get_setting('vendor_system_activation') == 1 && Auth::user()->user_type == 'customer')
             <div>
-                <a href="{{ route('shops.create') }}" class="btn btn-block btn-soft-primary rounded-0">
+                <a href="{{ route('shops.create') }}" class="btn btn-block  rounded-0" style="background-color: #1D4C58;">
                     </i>{{ translate('Be A Seller') }}
                 </a>
             </div>
