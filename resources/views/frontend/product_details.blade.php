@@ -214,7 +214,7 @@
                                                     {{ home_discounted_price($detailedProduct) }}
                                                 </strong>
                                                 @if($detailedProduct->unit != null)
-                                                    <span class="opacity-70" style="color: #FFFFFF;">>/{{ $detailedProduct->getTranslation('unit') }}</span>
+                                                    <span class="opacity-70" style="color: #FFFFFF;">/{{ $detailedProduct->getTranslation('unit') }}</span>
                                                 @endif
                                             </div>
                                         </div>
