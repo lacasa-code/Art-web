@@ -624,7 +624,7 @@
                                     </ul>
 
                                     @if(count($detailedProduct->reviews) <= 0)
-                                        <div class="text-center fs-18 opacity-70">
+                                        <div class="text-center fs-18 opacity-70" style="color: #FFFFFF;">
                                             {{  translate('There have been no reviews for this product yet.') }}
                                         </div>
                                     @endif
