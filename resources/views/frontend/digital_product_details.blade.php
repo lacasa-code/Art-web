@@ -114,7 +114,7 @@
 
                             <hr>
 
-                            <div class="row align-items-center">
+                            <div class="row align-items-center" style="color: #FFFFFF;">
                                 <div class="col-auto"  style="color: #FFFFFF;">
                                     <small class="mr-2 opacity-50"  style="color: #FFFFFF;">{{ translate('Sold by')}}: </small><br>
                                     @if ($detailedProduct->added_by == 'seller' && get_setting('vendor_system_activation') == 1)
@@ -173,7 +173,7 @@
                                 </div>
                             @else
                                 <div class="row no-gutters mt-3">
-                                    <div class="col-2">
+                                    <div class="col-2"  style="color: #FFFFFF;">
                                         <div class="opacity-50"  style="color: #FFFFFF;">{{ translate('Price')}}:</div>
                                     </div>
                                     <div class="col-10">
