@@ -1,5 +1,5 @@
-<div class="aiz-user-sidenav-wrap position-relative z-1 shadow-sm">
-    <div class="aiz-user-sidenav rounded overflow-auto c-scrollbar-light pb-5 pb-xl-0">
+<div class="aiz-user-sidenav-wrap position-relative z-1 shadow-sm" style="background-color: #FFFFFF;">
+    <div class="aiz-user-sidenav rounded overflow-auto c-scrollbar-light pb-5 pb-xl-0" style="background-color: #FFFFFF;">
         <div class="p-4 text-xl-center mb-4 border-bottom bg-primary text-white position-relative">
             <span class="avatar avatar-md mb-3">
                 @if (Auth::user()->avatar_original != null)
@@ -10,7 +10,7 @@
             </span>
             <h4 class="h5 fs-16 mb-1 fw-600">{{ Auth::user()->name }}</h4>
             @if(Auth::user()->phone != null)
-                <div class="text-truncate opacity-60">{{ Auth::user()->phone }}</div>
+                <div class="text-truncate opacity-60" style="color: #FFFFFF;">{{ Auth::user()->phone }}</div>
             @else
                 <div class="text-truncate opacity-60">{{ Auth::user()->email }}</div>
             @endif
