@@ -62,21 +62,21 @@
 
         <div class="col-lg-6">
             <div class="text-left">
-                <h2 class="mb-2 fs-20 fw-600">
+                <h2 class="mb-2 fs-20 fw-600" style="color: #1D4C58;">
                     {{  $product->getTranslation('name')  }}
                 </h2>
 
                 @if(home_price($product) != home_discounted_price($product))
                     <div class="row no-gutters mt-3">
                         <div class="col-2">
-                            <div class="opacity-50 mt-2">{{ translate('Price')}}:</div>
+                            <div class="opacity-50 mt-2" style="color: #1D4C58;">{{ translate('Price')}}:</div>
                         </div>
                         <div class="col-10">
-                            <div class="fs-20 opacity-60">
+                            <div class="fs-20 opacity-60" style="color: #1D4C58;">
                                 <del>
                                     {{ home_price($product) }}
                                     @if($product->unit != null)
-                                        <span>/{{ $product->getTranslation('unit') }}</span>
+                                        <span style="color: #1D4C58;">/{{ $product->getTranslation('unit') }}</span>
                                     @endif
                                 </del>
                             </div>
@@ -85,15 +85,15 @@
 
                     <div class="row no-gutters mt-2">
                         <div class="col-2">
-                            <div class="opacity-50">{{ translate('Discount Price')}}:</div>
+                            <div class="opacity-50" style="color: #1D4C58;">{{ translate('Discount Price')}}:</div>
                         </div>
                         <div class="col-10">
                             <div class="">
-                                <strong class="h2 fw-600 text-primary">
+                                <strong class="h2 fw-600 text-primary" style="color: #1D4C58;">
                                     {{ home_discounted_price($product) }}
                                 </strong>
                                 @if($product->unit != null)
-                                    <span class="opacity-70">/{{ $product->getTranslation('unit') }}</span>
+                                    <span class="opacity-70" style="color: #1D4C58;">/{{ $product->getTranslation('unit') }}</span>
                                 @endif
                             </div>
                         </div>
@@ -101,14 +101,14 @@
                 @else
                     <div class="row no-gutters mt-3">
                         <div class="col-2">
-                            <div class="opacity-50">{{ translate('Price')}}:</div>
+                            <div class="opacity-50" style="color: #1D4C58;">{{ translate('Price')}}:</div>
                         </div>
                         <div class="col-10">
                             <div class="">
-                                <strong class="h2 fw-600 text-primary">
+                                <strong class="h2 fw-600 text-primary" style="color: #1D4C58;">
                                     {{ home_discounted_price($product) }}
                                 </strong>
-                                <span class="opacity-70">/{{ $product->unit }}</span>
+                                <span class="opacity-70" style="color: #1D4C58;">/{{ $product->unit }}</span>
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
 
                                 <div class="row no-gutters">
                                     <div class="col-2">
-                                        <div class="opacity-50 mt-2 ">{{ \App\Models\Attribute::find($choice->attribute_id)->getTranslation('name') }}:</div>
+                                        <div class="opacity-50 mt-2 " style="color: #1D4C58;">{{ \App\Models\Attribute::find($choice->attribute_id)->getTranslation('name') }}:</div>
                                     </div>
                                     <div class="col-10">
                                         <div class="aiz-radio-inline">
@@ -200,7 +200,7 @@
 
                         <div class="row no-gutters">
                             <div class="col-2">
-                                <div class="opacity-50 mt-2">{{ translate('Quantity')}}:</div>
+                                <div class="opacity-50 mt-2" style="color: #1D4C58;">{{ translate('Quantity')}}:</div>
                             </div>
                             <div class="col-10">
                                 <div class="product-quantity d-flex align-items-center">
@@ -215,9 +215,9 @@
                                     </div>
                                     <div class="avialable-amount opacity-60">
                                         @if($product->stock_visibility_state == 'quantity')
-                                        (<span id="available-quantity">{{ $qty }}</span> {{ translate('available')}})
+                                        (<span id="available-quantity" style="color: #1D4C58;">{{ $qty }}</span> {{ translate('available')}})
                                         @elseif($product->stock_visibility_state == 'text' && $qty >= 1)
-                                            (<span id="available-quantity">{{ translate('In Stock') }}</span>)
+                                            (<span id="available-quantity" style="color: #1D4C58;">{{ translate('In Stock') }}</span>)
                                         @endif
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@
 
                     <div class="row no-gutters pb-3 d-none" id="chosen_price_div">
                         <div class="col-2">
-                            <div class="opacity-50">{{ translate('Total Price')}}:</div>
+                            <div class="opacity-50" style="color: #1D4C58;">{{ translate('Total Price')}}:</div>
                         </div>
                         <div class="col-10">
                             <div class="product-price">
