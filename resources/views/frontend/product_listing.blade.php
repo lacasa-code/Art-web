@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                                 <div class="bg-white shadow-sm rounded mb-3" style="background-color: #fff;">
-                                    <div class="fs-15 fw-600 p-3 border-bottom">
+                                    <div class="fs-15 fw-600 p-3 border-bottom" style="color: #1D4C58;" >
                                         {{ translate('Price range')}}
                                     </div>
                                     <div class="p-3">
@@ -106,7 +106,7 @@
 
                                             <div class="row mt-2">
                                                 <div class="col-6">
-                                                    <span class="range-slider-value value-low fs-14 fw-600 opacity-70"
+                                                    <span class="range-slider-value value-low fs-14 fw-600 opacity-70" style="color: #1D4C58;"
                                                         @if (isset($min_price))
                                                             data-range-value-low="{{ $min_price }}"
                                                         @elseif($products->min('unit_price') > 0)
@@ -118,7 +118,7 @@
                                                     ></span>
                                                 </div>
                                                 <div class="col-6 text-right">
-                                                    <span class="range-slider-value value-high fs-14 fw-600 opacity-70"
+                                                    <span class="range-slider-value value-high fs-14 fw-600 opacity-70" style="color: #1D4C58;"
                                                         @if (isset($max_price))
                                                             data-range-value-high="{{ $max_price }}"
                                                         @elseif($products->max('unit_price') > 0)
