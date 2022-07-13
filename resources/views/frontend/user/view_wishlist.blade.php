@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <div class="row gutters-5">
+    <div class="row gutters-5" style="background-color: #1D4C58;">
         @forelse ($wishlists as $key => $wishlist)
             @if ($wishlist->product != null)
                 <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6" id="wishlist_{{ $wishlist->id }}">
@@ -19,24 +19,24 @@
                                 <img src="{{ uploaded_asset($wishlist->product->thumbnail_img) }}" class="img-fit h-140px h-md-200px">
                             </a>
 
-                            <h5 class="fs-14 mb-0 lh-1-5 fw-600 text-truncate-2" style="color: #1D4C58;">
+                            <h5 class="fs-14 mb-0 lh-1-5 fw-600 text-truncate-2" >
                                 <a href="{{ route('product', $wishlist->product->slug) }}" class="text-reset">{{ $wishlist->product->getTranslation('name') }}</a>
                             </h5>
                             <div class="rating rating-sm mb-1">
                                 {{ renderStarRating($wishlist->product->rating) }}
                             </div>
-                            <div class=" fs-14">
+                            <div class=" fs-14" >
                                   @if(home_base_price($wishlist->product) != home_discounted_base_price($wishlist->product))
-                                      <del class="opacity-60 mr-1" style="color: #1D4C58;">{{ home_base_price($wishlist->product) }}</del>
+                                      <del class="opacity-60 mr-1" >{{ home_base_price($wishlist->product) }}</del>
                                   @endif
-                                      <span class="fw-600 text-primary" style="color: #1D4C58;">{{ home_discounted_base_price($wishlist->product) }}</span>
+                                      <span class="fw-600 text-primary" >{{ home_discounted_base_price($wishlist->product) }}</span>
                             </div>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="link link--style-3" data-toggle="tooltip" data-placement="top" title="Remove from wishlist" onclick="removeFromWishlist({{ $wishlist->id }})">
                                 <i class="la la-trash la-2x"></i>
                             </a>
-                            <button type="button" class="btn btn-sm btn-block btn-primary ml-3" onclick="showAddToCartModal({{ $wishlist->product->id }})">
+                            <button type="button" class="btn btn-sm btn-block btn-primary ml-3" style="color: #FFFFFF;background-color: #1D4C58;"  onclick="showAddToCartModal({{ $wishlist->product->id }})">
                                 <i class="la la-shopping-cart mr-2"></i>{{ translate('Add to cart')}}
                             </button>
                         </div>
