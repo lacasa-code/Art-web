@@ -12,9 +12,9 @@
     <div class="row gutters-5" style="background-color: #1D4C58;">
         @forelse ($wishlists as $key => $wishlist)
             @if ($wishlist->product != null)
-                <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6" id="wishlist_{{ $wishlist->id }}">
-                    <div class="card mb-2 shadow-sm">
-                        <div class="card-body">
+                <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6" style="background-color: #1D4C58;" id="wishlist_{{ $wishlist->id }}">
+                    <div class="card mb-2 shadow-sm" style="background-color: #1D4C58;">
+                        <div class="card-body" style="background-color: #1D4C58;">
                             <a href="{{ route('product', $wishlist->product->slug) }}" class="d-block mb-3">
                                 <img src="{{ uploaded_asset($wishlist->product->thumbnail_img) }}" class="img-fit h-140px h-md-200px">
                             </a>
