@@ -51,7 +51,7 @@
                                     </button>
                                 </div>
                                 <div class="bg-white shadow-sm rounded mb-3" style="background-color: #fff;">
-                                    <div class="fs-15 fw-600 p-3 border-bottom">
+                                    <div class="fs-15 fw-600 p-3 border-bottom" style="color: #1D4C58;">
                                         {{ translate('Categories')}}
                                     </div>
                                     <div class="p-3">
