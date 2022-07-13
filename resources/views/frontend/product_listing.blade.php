@@ -136,7 +136,7 @@
 
                                 @foreach ($attributes as $attribute)
                                     <div class="bg-white shadow-sm rounded mb-3" style="background-color: #fff;">
-                                        <div class="fs-15 fw-600 p-3 border-bottom">
+                                        <div class="fs-15 fw-600 p-3 border-bottom" style="color: #1D4C58;">
                                             {{ translate('Filter by') }} {{ $attribute->getTranslation('name') }}
                                         </div>
                                         <div class="p-3">
@@ -160,7 +160,7 @@
 
                                 @if (get_setting('color_filter_activation'))
                                     <div class="bg-white shadow-sm rounded mb-3" style="background-color: #fff;">
-                                        <div class="fs-15 fw-600 p-3 border-bottom">
+                                        <div class="fs-15 fw-600 p-3 border-bottom" style="color: #1D4C58;">
                                             {{ translate('Filter by color')}}
                                         </div>
                                         <div class="p-3">
@@ -191,7 +191,7 @@
                     <div class="col-xl-9">
 
                         <ul class="breadcrumb bg-transparent p-0">
-                            <li class="breadcrumb-item opacity-50">
+                            <li class="breadcrumb-item opacity-50" style="color: #FFFFFF;">
                                 <a class="text-reset" href="{{ route('home') }}">{{ translate('Home')}}</a>
                             </li>
                             @if(!isset($category_id))
@@ -213,7 +213,7 @@
                         <div class="text-left">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <h1 class="h6 fw-600 text-body">
+                                    <h1 class="h6 fw-600 text-body" style="color: #FFFFFF;">
                                         @if(isset($category_id))
                                             {{ \App\Models\Category::find($category_id)->getTranslation('name') }}
                                         @elseif(isset($query))
@@ -236,11 +236,11 @@
                                     @endif
                                 </div>
                                 <div class="form-group w-200px ml-0 ml-xl-3">
-                                    <label class="mb-0 opacity-50">{{ translate('Sort by')}}</label>
-                                    <select class="form-control form-control-sm aiz-selectpicker" name="sort_by" onchange="filter()">
-                                        <option value="newest" @isset($sort_by) @if ($sort_by == 'newest') selected @endif @endisset>{{ translate('Newest')}}</option>
-                                        <option value="oldest" @isset($sort_by) @if ($sort_by == 'oldest') selected @endif @endisset>{{ translate('Oldest')}}</option>
-                                        <option value="price-asc" @isset($sort_by) @if ($sort_by == 'price-asc') selected @endif @endisset>{{ translate('Price low to high')}}</option>
+                                    <label class="mb-0 opacity-50" style="color: #FFFFFF;">{{ translate('Sort by')}}</label>
+                                    <select class="form-control form-control-sm aiz-selectpicker" name="sort_by" onchange="filter()" style="color: #1D4C58;">
+                                        <option value="newest" @isset($sort_by) @if ($sort_by == 'newest') selected @endif @endisset style="color: #1D4C58;">{{ translate('Newest')}}</option>
+                                        <option value="oldest" @isset($sort_by) @if ($sort_by == 'oldest') selected @endif @endisset >{{ translate('Oldest')}}</option>
+                                        <option value="price-asc" @isset($sort_by) @if ($sort_by == 'price-asc') selected @endif @endisset >{{ translate('Price low to high')}}</option>
                                         <option value="price-desc" @isset($sort_by) @if ($sort_by == 'price-desc') selected @endif @endisset>{{ translate('Price high to low')}}</option>
                                     </select>
                                 </div>
