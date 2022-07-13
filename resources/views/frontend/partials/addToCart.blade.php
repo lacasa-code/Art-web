@@ -105,7 +105,7 @@
                         </div>
                         <div class="col-10">
                             <div class="">
-                                <strong class="h2 fw-600 text-primary" style="color: #1D4C58;">
+                                <strong class="h2 fw-600 text-primary" style="color: #1D4C58; !important">
                                     {{ home_discounted_price($product) }}
                                 </strong>
                                 <span class="opacity-70" style="color: #1D4C58;">/{{ $product->unit }}</span>
@@ -243,9 +243,9 @@
                 </form>
                 <div class="mt-3">
                     @if ($product->digital == 1)
-                        <button type="button" class="btn btn-primary buy-now fw-600 add-to-cart" onclick="addToCart()">
+                        <button type="button" class="btn btn-primary buy-now fw-600 add-to-cart" style="background-color: #1D4C58;" onclick="addToCart()">
                             <i class="la la-shopping-cart"></i>
-                            <span class="d-none d-md-inline-block"> {{ translate('Add to cart')}}</span>
+                            <span class="d-none d-md-inline-block" style="color: #FFFFFF;"> {{ translate('Add to cart')}}</span>
                         </button>
                     @elseif($qty > 0)
                         @if ($product->external_link != null)
