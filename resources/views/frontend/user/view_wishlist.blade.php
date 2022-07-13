@@ -4,7 +4,7 @@
     <div class="aiz-titlebar mt-2 mb-4">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <b class="h4">{{ translate('Wishlist')}}</b>
+                <b class="h4" style="color: #FFFFFF;" >{{ translate('Wishlist')}}</b>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
                                 <img src="{{ uploaded_asset($wishlist->product->thumbnail_img) }}" class="img-fit h-140px h-md-200px">
                             </a>
 
-                            <h5 class="fs-14 mb-0 lh-1-5 fw-600 text-truncate-2">
+                            <h5 class="fs-14 mb-0 lh-1-5 fw-600 text-truncate-2" style="color: #1D4C58;">
                                 <a href="{{ route('product', $wishlist->product->slug) }}" class="text-reset">{{ $wishlist->product->getTranslation('name') }}</a>
                             </h5>
                             <div class="rating rating-sm mb-1">
@@ -27,9 +27,9 @@
                             </div>
                             <div class=" fs-14">
                                   @if(home_base_price($wishlist->product) != home_discounted_base_price($wishlist->product))
-                                      <del class="opacity-60 mr-1">{{ home_base_price($wishlist->product) }}</del>
+                                      <del class="opacity-60 mr-1" style="color: #1D4C58;">{{ home_base_price($wishlist->product) }}</del>
                                   @endif
-                                      <span class="fw-600 text-primary">{{ home_discounted_base_price($wishlist->product) }}</span>
+                                      <span class="fw-600 text-primary" style="color: #1D4C58;">{{ home_discounted_base_price($wishlist->product) }}</span>
                             </div>
                         </div>
                         <div class="card-footer">
