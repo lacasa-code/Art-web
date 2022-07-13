@@ -233,7 +233,7 @@
                         </div>
                         <div class="col-10">
                             <div class="product-price" style="color: #1D4C58;">
-                                <strong id="chosen_price" class="h4 fw-600 text-primary" style="color: #1D4C58;">
+                                <strong id="chosen_price" class="h4 fw-600 text-primary" style="color: #1D4C58 !important;">
 
                                 </strong>
                             </div>
