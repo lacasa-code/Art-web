@@ -232,7 +232,7 @@
                             <div class="opacity-50" style="color: #1D4C58;">{{ translate('Total Price')}}:</div>
                         </div>
                         <div class="col-10">
-                            <div class="product-price">
+                            <div class="product-price" style="color: #1D4C58;">
                                 <strong id="chosen_price" class="h4 fw-600 text-primary" style="color: #1D4C58;">
 
                                 </strong>
