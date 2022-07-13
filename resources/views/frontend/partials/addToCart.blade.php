@@ -105,7 +105,7 @@
                         </div>
                         <div class="col-10">
                             <div class="">
-                                <strong class="h2 fw-600 text-primary" style="color: #1D4C58; !important">
+                                <strong class="h2 fw-600 text-primary" style="color: #1D4C58 !important">
                                     {{ home_discounted_price($product) }}
                                 </strong>
                                 <span class="opacity-70" style="color: #1D4C58;">/{{ $product->unit }}</span>
