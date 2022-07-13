@@ -213,7 +213,7 @@
                                             <i class="las la-plus"></i>
                                         </button>
                                     </div>
-                                    <div class="avialable-amount opacity-60">
+                                    <div class="avialable-amount opacity-60" style="color: #1D4C58;">
                                         @if($product->stock_visibility_state == 'quantity')
                                         (<span id="available-quantity" style="color: #1D4C58;">{{ $qty }}</span> {{ translate('available')}})
                                         @elseif($product->stock_visibility_state == 'text' && $qty >= 1)
@@ -227,7 +227,7 @@
                         <hr>
                     @endif
 
-                    <div class="row no-gutters pb-3 d-none" id="chosen_price_div">
+                    <div class="row no-gutters pb-3 d-none" id="chosen_price_div" style="color: #1D4C58;">
                         <div class="col-2">
                             <div class="opacity-50" style="color: #1D4C58;">{{ translate('Total Price')}}:</div>
                         </div>
