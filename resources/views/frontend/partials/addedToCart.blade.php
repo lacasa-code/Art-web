@@ -6,11 +6,11 @@
     <div class="media mb-4">
         <img src="{{ static_asset('assets/img/placeholder.jpg') }}" data-src="{{ uploaded_asset($product->thumbnail_img) }}" class="mr-3 lazyload size-100px img-fit rounded" alt="Product Image">
         <div class="media-body pt-3 text-left">
-            <h6 class="fw-600">
+            <h6 class="fw-600" style="color: #1D4C58;">
                 {{  $product->getTranslation('name')  }}
             </h6>
             <div class="row mt-3">
-                <div class="col-sm-2 opacity-60">
+                <div class="col-sm-2 opacity-60" style="color: #1D4C58;">
                     <div>{{ translate('Price')}}:</div>
                 </div>
                 <div class="col-sm-10">
