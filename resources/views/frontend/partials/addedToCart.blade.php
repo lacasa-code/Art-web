@@ -14,8 +14,8 @@
                     <div>{{ translate('Price')}}:</div>
                 </div>
                 <div class="col-sm-10">
-                    <div class="h6 text-primary">
-                        <strong>
+                    <div class="h6 text-primary" style="color: #1D4C58;">
+                        <strong style="color: #1D4C58;">
                             {{ single_price(($data['price'] + $data['tax']) * $data['quantity']) }}
                         </strong>
                     </div>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="text-center">
-        <button class="btn btn-outline-primary mb-3 mb-sm-0" data-dismiss="modal">{{ translate('Back to shopping')}}</button>
-        <a href="{{ route('cart') }}" class="btn btn-primary mb-3 mb-sm-0">{{ translate('Proceed to Checkout')}}</a>
+        <button class="btn btn-outline-primary mb-3 mb-sm-0" data-dismiss="modal" style="color: #1D4C58;">{{ translate('Back to shopping')}}</button>
+        <a href="{{ route('cart') }}" class="btn btn-primary mb-3 mb-sm-0" style="color: #1D4C58;">{{ translate('Proceed to Checkout')}}</a>
     </div>
 </div>
