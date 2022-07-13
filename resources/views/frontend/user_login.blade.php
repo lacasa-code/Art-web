@@ -8,7 +8,8 @@
                     <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-8 mx-auto">
                         <div class="card">
                             <div class="text-center pt-4">
-                                <h1 class="h4 fw-600">
+                                <h1 class="h4 fw-600" style="color: #1D4C58;"
+>
                                     {{ translate('Login to your account.')}}
                                 </h1>
                             </div>
@@ -55,7 +56,7 @@
                                             <div class="col-6">
                                                 <label class="aiz-checkbox">
                                                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
-                                                    <span class=opacity-60>{{  translate('Remember Me') }}</span>
+                                                    <span class=opacity-60 style="color: #1D4C58;">{{  translate('Remember Me') }}</span>
                                                     <span class="aiz-square-check"></span>
                                                 </label>
                                             </div>
