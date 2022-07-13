@@ -32,11 +32,11 @@
                                       <span class="fw-600 text-primary" >{{ home_discounted_base_price($wishlist->product) }}</span>
                             </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer" style="border-color: #40A6BF !important;">
                             <a href="#" class="link link--style-3" data-toggle="tooltip" data-placement="top" title="Remove from wishlist" onclick="removeFromWishlist({{ $wishlist->id }})">
                                 <i class="la la-trash la-2x"></i>
                             </a>
-                            <button type="button" class="btn btn-sm btn-block btn-primary ml-3" style="color: #FFFFFF;background-color: #1D4C58;"  onclick="showAddToCartModal({{ $wishlist->product->id }})">
+                            <button type="button" class="btn btn-sm btn-block btn-primary ml-3" style="border-color: #40A6BF !important;color: #FFFFFF;background-color: #1D4C58;"  onclick="showAddToCartModal({{ $wishlist->product->id }})">
                                 <i class="la la-shopping-cart mr-2"></i>{{ translate('Add to cart')}}
                             </button>
                         </div>
